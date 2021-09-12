@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp">
+
+    <ImageView
+        android:id="@+id/icon_ImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_cloud_24" />
+
+    <TextView
+        android:id="@+id/day_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="9dp"
+        android:text="Monday"
+        android:textSize="14sp"
+        android:textColor="@color/brandBlackColor"
+        app:layout_constraintBottom_toTopOf="@+id/temp1_Text"
+        app:layout_constraintStart_toEndOf="@+id/icon_ImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp1_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26.09"
+        android:textSize="19sp"
+        android:textColor="@color/brandBlueBlackColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/day_Text" />
+
+    <TextView
+        android:id="@+id/temp2_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:text="20.89"
+        android:textColor="@color/brandCreamTextColor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/temp1_Text"
+        app:layout_constraintTop_toBottomOf="@+id/day_Text" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:text="Rain"
+        android:textSize="14sp"
+        android:textColor="@color/brandCreamTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textSize="14sp"
+        android:textColor="@color/brandCreamTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rain_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46%"
+        android:textSize="15sp"
+        android:textColor="@color/brandBlackColor"
+        app:layout_constraintBottom_toBottomOf="@+id/temp2_Text"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/temp2_Text" />
+
+    <TextView
+        android:id="@+id/humidity_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="46%"
+        android:textSize="15sp"
+        android:textColor="@color/brandBlackColor"
+        app:layout_constraintBottom_toBottomOf="@+id/rain_Text"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/rain_Text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
