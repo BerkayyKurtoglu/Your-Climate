@@ -15,6 +15,7 @@ Screen One | Screen Two
 - Retrofit - Restful API
 - Coil
 - Jetpack Navigation component 
+- Material Design transition animations
 
 #### Soon :wink:;
 - [ ] There will be unit and UI test codes for the application.
