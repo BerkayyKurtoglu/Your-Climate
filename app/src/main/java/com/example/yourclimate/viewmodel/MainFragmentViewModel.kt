@@ -44,12 +44,9 @@ class MainFragmentViewModel @Inject constructor(
         }
     }
 
-    fun swipeRefreshListener(){
-        _weatherLiveDate.value = Resource.loading(null)
-        viewModelScope.launch {
-            val response = weatherRepo.getWeatherInformationWithoutForecast()
-            _weatherLiveDate.value = response
-        }
+    fun swipeRefreshListener(dt : String){
+        getNextData()
+        getHistoricDate(dt)
     }
 
 }

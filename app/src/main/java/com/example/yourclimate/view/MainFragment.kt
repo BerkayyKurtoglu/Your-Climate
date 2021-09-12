@@ -31,7 +31,6 @@ class MainFragment @Inject constructor(
     private var mainFragmentBinding: MainFragmentBinding? = null
     private var dt : Long? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enterTransition = MaterialSharedAxis(MaterialSharedAxis.X, /* forward= */ true)
@@ -62,7 +61,7 @@ class MainFragment @Inject constructor(
         }
         binding.swipeToRefresh.setOnRefreshListener {
             binding.swipeToRefresh.isRefreshing = false
-            viewModel.swipeRefreshListener()
+            viewModel.swipeRefreshListener(dt.toString())
         }
         binding.yesterdayButton.setOnClickListener {
             yesterdayClicked(it)
