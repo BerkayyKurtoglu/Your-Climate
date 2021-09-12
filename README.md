@@ -1,6 +1,6 @@
 # Your-Climate
 ### Hi ! Firstly Welcome to My Repository :call_me_hand:
-#### Your Climate is a weather application which is using Open Weather API and has a modern User Interface skecthed in Adobe XD 
+#### Your Climate is a weather application that uses Open Weather API and has a modern User Interface skecthed in Adobe XD 
 https://user-images.githubusercontent.com/88981781/132986641-56e06750-2100-4fb4-bc4a-84408ec52c28.mp4
 
 Screen One | Screen Two
@@ -15,6 +15,7 @@ Screen One | Screen Two
 - Retrofit - Restful API
 - Coil
 - Jetpack Navigation component 
+- Material Design transition animations
 
 #### Soon :wink:;
 - [ ] There will be unit and UI test codes for the application.
