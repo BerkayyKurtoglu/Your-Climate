@@ -1,5 +1,8 @@
 package com.example.yourclimate.dependencyinjection
 
+import androidx.annotation.ChecksSdkIntAtLeast
+import com.example.yourclimate.model.nextdays.WeatherX
+import com.example.yourclimate.model.nextdays.WeatherXX
 import com.example.yourclimate.repo.WeatherRepo
 import com.example.yourclimate.repo.WeatherRepoInterface
 import com.example.yourclimate.service.WeatherAPI
@@ -30,6 +33,5 @@ class Module {
     fun injectWeatherInterface(weatherAPI: WeatherAPI) : WeatherRepoInterface {
         return WeatherRepo(weatherAPI)
     }
-
 
 }

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.yourclimate.R
 import com.example.yourclimate.model.nextdays.Hourly
+import com.example.yourclimate.model.nextdays.Weather
 import com.example.yourclimate.util.getImageFromUrl
 import com.example.yourclimate.util.makeCircularProgressDrawable
 import java.text.SimpleDateFormat
@@ -30,6 +31,8 @@ class MainFragmentTodayReAdapter @Inject constructor(
             return oldItem == newItem
         }
     }
+
+    var clickedItem : Hourly? = null
 
     private val recyclerListDiffer = AsyncListDiffer(this,callBack)
 
@@ -62,6 +65,11 @@ class MainFragmentTodayReAdapter @Inject constructor(
         val imageUrl = "https://openweathermap.org/img/wn/${code}@2x.png"
         imageView.getImageFromUrl(imageUrl, makeCircularProgressDrawable(imageView.context))
         tempText.text ="${hourlyList[position].temp.toInt()}°"
+
+        holder.view.setOnClickListener {
+            clickedItem = hourlyList[position]
+        }
+
     }
 
     override fun getItemCount(): Int {

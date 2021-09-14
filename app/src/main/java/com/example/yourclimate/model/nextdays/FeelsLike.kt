@@ -1,6 +1,8 @@
 package com.example.yourclimate.model.nextdays
 
-data class FeelsLike(
+import javax.inject.Inject
+
+data class FeelsLike @Inject constructor(
     val day: Double,
     val eve: Double,
     val morn: Double,

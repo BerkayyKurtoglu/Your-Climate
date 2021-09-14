@@ -27,7 +27,7 @@ class MainFragment @Inject constructor(
     val historicReAdapter : MainFragmentYesterdayReAdapter
 ) : Fragment(R.layout.main_fragment) {
 
-    private lateinit var viewModel : MainFragmentViewModel
+    lateinit var viewModel : MainFragmentViewModel
     private var mainFragmentBinding: MainFragmentBinding? = null
     private var dt : Long? = null
 

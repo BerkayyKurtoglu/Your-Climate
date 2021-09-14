@@ -1,6 +1,8 @@
 package com.example.yourclimate.model.nextdays
 
-data class Hourly(
+import javax.inject.Inject
+
+data class Hourly @Inject constructor(
     val clouds: Double,
     val dew_point: Double,
     val dt: Int,

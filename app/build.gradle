@@ -16,7 +16,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.example.yourclimate.CustomTestRunner"
     }
 
     buildTypes {
@@ -43,6 +44,7 @@ android {
 dependencies {
 
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.test.espresso:espresso-contrib:3.4.0'
     def lottieVersion = "4.1.0"
 
 

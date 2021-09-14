@@ -22,6 +22,8 @@ class ForecastFragmentReAdapter @Inject constructor(
 
 ) : RecyclerView.Adapter<ForecastFragmentReAdapter.ViewHolder>() {
 
+    var clickTest : Daily? = null
+
     private val diffUtilCallback = object : DiffUtil.ItemCallback<Daily>(){
         override fun areItemsTheSame(oldItem: Daily, newItem: Daily): Boolean {
             return oldItem == newItem
@@ -66,6 +68,11 @@ class ForecastFragmentReAdapter @Inject constructor(
         temp2Text.text = "${day.temp.min}°"
         rainText.text = "${day.rain.toInt()}mm"
         humidityText.text = "${day.humidity.toInt()}%"
+
+        holder.view.setOnClickListener {
+            clickTest = dailyList[position]
+        }
+
 
     }
 
