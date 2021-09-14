@@ -18,4 +18,4 @@ Screen One | Screen Two
 - Material Design transition animations
 
 #### Soon :wink:;
-- [ ] There will be unit and UI test codes for the application.
+- [x] There will be unit and UI test codes for the application.
